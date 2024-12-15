@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detoxify | Детокс-программы</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с меню -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="#hero" class="logo-text">DETOXIFY</a>
+            </div>
+            <!-- Навигация -->
+            <nav class="menu">
+                <ul class="menu-links">
+                    <li><a href="#about" class="menu-item">О продукте</a></li>
+                    <li><a href="#flavors" class="menu-item">Вкусы</a></li>
+                    <li><a href="#pricing" class="menu-item">Тарифы</a></li>
+                    <li><a href="#order" class="menu-item">Заказ</a></li>
+                </ul>
+            </nav>
+            <!-- Действия -->
+            <div class="menu-actions">
+                <button id="theme-toggle" class="btn-theme">🌙</button>
+                <div class="language-select">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="kz">KZ</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+<section id="promotion" class="promotion">
+    <div class="container">
+        <h2>Акция: Успейте заказать до 30 декабря!</h2>
+        <p class="promotion-text">
+            Только до 30 декабря вы можете заказать подарочные купоны на любой из наших тарифов.
+        </p>
+        <div class="countdown">
+            <div class="countdown-item">
+                <span id="days" class="countdown-number">00</span>
+                <span class="countdown-label">Дней</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours" class="countdown-number">00</span>
+                <span class="countdown-label">Часов</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes" class="countdown-number">00</span>
+                <span class="countdown-label">Минут</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds" class="countdown-number">00</span>
+                <span class="countdown-label">Секунд</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Здоровье начинается с <span>Detoxify</span></h1>
+            <p>Откройте для себя детокс-программы с натуральными ингредиентами для очищения и восстановления организма.</p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn-primary">Выбрать программу</a>
+                <a href="#order" class="btn btn-secondary">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="about">
+    <div class="container">
+        <h2>О нас</h2>
+        <p class="about-intro">
+            Detoxify предлагает натуральные программы для очищения организма, восстановления энергии и улучшения общего состояния здоровья. Мы заботимся о вашем здоровье, используя только лучшие ингредиенты.
+        </p>
+        <div class="about-content">
+            <!-- Первый блок -->
+            <div class="about-block">
+                <h3>Чем полезна наша программа?</h3>
+                <p>Наши программы помогают:</p>
+                <ul>
+                    <li>Ускорить обмен веществ.</li>
+                    <li>Вывести токсины из организма.</li>
+                    <li>Вернуть энергию и улучшить самочувствие.</li>
+                </ul>
+            </div>
+            <!-- Второй блок -->
+            <div class="about-block">
+                <h3>Почему выбирают нас?</h3>
+                <p>Мы предлагаем:</p>
+                <ul>
+                    <li>100% натуральные ингредиенты.</li>
+                    <li>Персонализированные рекомендации.</li>
+                    <li>Доставку программ прямо домой.</li>
+                </ul>
+            </div>
+            <!-- Третий блок -->
+            <div class="about-block">
+                <h3>Наша миссия</h3>
+                <p>Мы стремимся:</p>
+                <ul>
+                    <li>Сделать здоровье доступным для каждого.</li>
+                    <li>Создавать высококачественные продукты.</li>
+                    <li>Поддерживать ваши цели на пути к лучшему самочувствию.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="program" class="program">
+    <div class="container">
+        <!-- Текст "О программе" -->
+        <h2>О программе</h2>
+        <p class="program-intro">
+            Detoxify предлагает уникальные программы, которые помогут вашему организму восстановиться, наполниться энергией и почувствовать легкость. Мы используем только натуральные ингредиенты и сбалансированные рецепты, чтобы сделать процесс очищения максимально комфортным.
+        </p>
+        <!-- Галерея-слайдер -->
+        <div class="gallery-slider">
+            <button class="slider-btn prev-btn" aria-label="Назад">❮</button>
+            <div class="gallery-wrapper">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <div class="gallery-image" style="background-image: url('image-placeholder-1.jpg');"></div>
+                        <p>Свежие фрукты и овощи</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image" style="background-image: url('image-placeholder-2.jpg');"></div>
+                        <p>Сбалансированные рецепты</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image" style="background-image: url('image-placeholder-3.jpg');"></div>
+                        <p>Удобная доставка</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image" style="background-image: url('image-placeholder-4.jpg');"></div>
+                        <p>Программа на каждый день</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next-btn" aria-label="Вперед">❯</button>
+        </div>
+    </div>
+</section>
+<section id="faq" class="faq">
+    <div class="container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+            <!-- Вопрос 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Как оформить заказ?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Выберите подходящий тариф, заполните форму с вашими данными и адресом. После этого вы будете перенаправлены на страницу оплаты Kaspi.kz.</p>
+                </div>
+            </div>
+            <!-- Вопрос 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Как происходит доставка?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Мы доставляем программы в течение 24 часов после оплаты. Доставка осуществляется по указанному вами адресу.</p>
+                </div>
+            </div>
+            <!-- Вопрос 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Можно ли выбрать программу на больше 5 дней?
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Да, мы можем разработать индивидуальную программу на более длительный срок. Свяжитесь с нами для обсуждения.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2>Тарифы</h2>
+        <p class="pricing-intro">
+            Выберите подходящую программу и оставьте заявку для оформления заказа. После заполнения формы вы будете перенаправлены на страницу оплаты Kaspi.kz.
+        </p>
+        <div class="pricing-grid">
+            <!-- Тариф 1 день -->
+            <div class="pricing-card">
+                <h3>1 день</h3>
+                <p>7 бутылочек</p>
+                <p>Цена: 5000 KZT</p>
+                <button class="btn kaspi-btn" data-tariff="1 день">Выбрать тариф</button>
+                <form class="order-form hidden">
+                    <input type="hidden" class="selected-tariff" value="1 день">
+                    <label for="name-1">Имя:</label>
+                    <input type="text" id="name-1" class="name-input" placeholder="Ваше имя" required>
+                    <label for="phone-1">Телефон:</label>
+                    <input type="tel" id="phone-1" class="phone-input" placeholder="Ваш телефон" required>
+                    <label for="address-1">Адрес:</label>
+                    <input type="text" id="address-1" class="address-input" placeholder="Ваш адрес доставки" required>
+                    <label for="allergy-1">Аллергии:</label>
+                    <textarea id="allergy-1" class="allergy-input" placeholder="Например: орехи, мед..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Оплатить через Kaspi.kz</button>
+                </form>
+            </div>
+
+            <!-- Тариф 2 дня -->
+            <div class="pricing-card">
+                <h3>2 дня</h3>
+                <p>14 бутылочек</p>
+                <p>Цена: 9000 KZT</p>
+                <button class="btn kaspi-btn" data-tariff="2 дня">Выбрать тариф</button>
+                <form class="order-form hidden">
+                    <input type="hidden" class="selected-tariff" value="2 дня">
+                    <label for="name-2">Имя:</label>
+                    <input type="text" id="name-2" class="name-input" placeholder="Ваше имя" required>
+                    <label for="phone-2">Телефон:</label>
+                    <input type="tel" id="phone-2" class="phone-input" placeholder="Ваш телефон" required>
+                    <label for="address-2">Адрес:</label>
+                    <input type="text" id="address-2" class="address-input" placeholder="Ваш адрес доставки" required>
+                    <label for="allergy-2">Аллергии:</label>
+                    <textarea id="allergy-2" class="allergy-input" placeholder="Например: орехи, мед..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Оплатить через Kaspi.kz</button>
+                </form>
+            </div>
+
+            <!-- Тариф 3 дня -->
+            <div class="pricing-card">
+                <h3>3 дня</h3>
+                <p>21 бутылочка</p>
+                <p>Цена: 14000 KZT</p>
+                <button class="btn kaspi-btn" data-tariff="3 дня">Выбрать тариф</button>
+                <form class="order-form hidden">
+                    <input type="hidden" class="selected-tariff" value="3 дня">
+                    <label for="name-3">Имя:</label>
+                    <input type="text" id="name-3" class="name-input" placeholder="Ваше имя" required>
+                    <label for="phone-3">Телефон:</label>
+                    <input type="tel" id="phone-3" class="phone-input" placeholder="Ваш телефон" required>
+                    <label for="address-3">Адрес:</label>
+                    <input type="text" id="address-3" class="address-input" placeholder="Ваш адрес доставки" required>
+                    <label for="allergy-3">Аллергии:</label>
+                    <textarea id="allergy-3" class="allergy-input" placeholder="Например: орехи, мед..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Оплатить через Kaspi.kz</button>
+                </form>
+            </div>
+
+            <!-- Тариф 4 дня -->
+            <div class="pricing-card">
+                <h3>4 дня</h3>
+                <p>28 бутылочек</p>
+                <p>Цена: 18000 KZT</p>
+                <button class="btn kaspi-btn" data-tariff="4 дня">Выбрать тариф</button>
+                <form class="order-form hidden">
+                    <input type="hidden" class="selected-tariff" value="4 дня">
+                    <label for="name-4">Имя:</label>
+                    <input type="text" id="name-4" class="name-input" placeholder="Ваше имя" required>
+                    <label for="phone-4">Телефон:</label>
+                    <input type="tel" id="phone-4" class="phone-input" placeholder="Ваш телефон" required>
+                    <label for="address-4">Адрес:</label>
+                    <input type="text" id="address-4" class="address-input" placeholder="Ваш адрес доставки" required>
+                    <label for="allergy-4">Аллергии:</label>
+                    <textarea id="allergy-4" class="allergy-input" placeholder="Например: орехи, мед..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Оплатить через Kaspi.kz</button>
+                </form>
+            </div>
+
+            <!-- Тариф 5 дней -->
+            <div class="pricing-card">
+                <h3>5 дней</h3>
+                <p>35 бутылочек</p>
+                <p>Цена: 23000 KZT</p>
+                <button class="btn kaspi-btn" data-tariff="5 дней">Выбрать тариф</button>
+                <form class="order-form hidden">
+                    <input type="hidden" class="selected-tariff" value="5 дней">
+                    <label for="name-5">Имя:</label>
+                    <input type="text" id="name-5" class="name-input" placeholder="Ваше имя" required>
+                    <label for="phone-5">Телефон:</label>
+                    <input type="tel" id="phone-5" class="phone-input" placeholder="Ваш телефон" required>
+                    <label for="address-5">Адрес:</label>
+                    <input type="text" id="address-5" class="address-input" placeholder="Ваш адрес доставки" required>
+                    <label for="allergy-5">Аллергии:</label>
+                    <textarea id="allergy-5" class="allergy-input" placeholder="Например: орехи, мед..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Оплатить через Kaspi.kz</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contacts" class="contacts">
+    <div class="container">
+        <!-- Заголовок -->
+        <h2>Контакты</h2>
+
+        <!-- Текст -->
+        <p class="contacts-intro">
+            Свяжитесь с нами через социальные сети или оставьте сообщение — мы всегда на связи!
+        </p>
+
+        <!-- Социальные сети -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/ваш_аккаунт" target="_blank" class="social-link instagram">
+                <span class="icon">📸</span> Instagram
+            </a>
+            <a href="https://wa.me/ваш_номер_в_формате_с_кодом_страны" target="_blank" class="social-link whatsapp">
+                <span class="icon">💬</span> WhatsApp
+            </a>
+        </div>
+
+        <!-- Форма для связи -->
+        <form id="contact-form" class="contact-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+            <label for="phone">Номер WhatsApp:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер WhatsApp" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Заказать бесплатную консультацию</button>
+        </form>
+    </div>
+</section>
+<section id="bonus" class="bonus">
+    <div class="container">
+        <h2>Бонусная система</h2>
+        <p class="bonus-intro">
+            Наша игровая бонусная система позволяет вам зарабатывать токены на базе TON. Токены можно обменивать на скидки, дополнительные дни программы или эксклюзивные продукты. Начните играть и зарабатывайте бонусы!
+        </p>
+
+        <!-- Основной блок -->
+        <div class="bonus-content">
+            <div class="bonus-details">
+                <h3>Как это работает?</h3>
+                <ul>
+                    <li>🎯 Вы выполняете задания (заказы, отзывы, участие в акциях).</li>
+                    <li>💎 Получаете токены в качестве награды.</li>
+                    <li>🎁 Обмениваете токены на бонусы и скидки.</li>
+                </ul>
+            </div>
+
+            <div class="bonus-action">
+                <h3>Скоро доступно!</h3>
+                <p>Мы работаем над интеграцией этой функции. Скоро вы сможете зарабатывать и использовать токены прямо с вашего аккаунта!</p>
+                <button class="btn play-btn">Играть</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Логотип и описание -->
+            <div class="footer-about">
+                <h3>Detoxify</h3>
+                <p>Мы предлагаем лучшие программы для очищения организма. Только натуральные ингредиенты и индивидуальный подход.</p>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="footer-social">
+                <h4>Мы в соцсетях:</h4>
+                <a href="https://www.instagram.com/ваш_аккаунт" target="_blank" class="social-link">Instagram</a>
+                <a href="https://wa.me/ваш_номер_в_формате_с_кодом_страны" target="_blank" class="social-link">WhatsApp</a>
+            </div>
+
+            <!-- Контакты -->
+            <div class="footer-contact">
+                <h4>Контакты:</h4>
+                <p>Телефон: <a href="tel:+7066067433">+7 (706) 606-7433</a></p>
+                <p>Email: <a href="mailto:info@detoxify.kz">detoxify@inbox.ru</a></p>
+                <p>Адрес: г. Актау</p>
+            </div>
+        </div>
+
+        <!-- Авторские права -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Detoxify. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
