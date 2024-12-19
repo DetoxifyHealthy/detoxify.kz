@@ -8,6 +8,40 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
+    <!--Меню на телефоне-->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="#hero" class="logo-text">DETOXIFY</a>
+            </div>
+            <!-- Бургер-меню -->
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Навигация -->
+            <nav class="menu">
+                <ul class="menu-links">
+                    <li><a href="#about" class="menu-item">О продукте</a></li>
+                    <li><a href="#flavors" class="menu-item">Вкусы</a></li>
+                    <li><a href="#pricing" class="menu-item">Тарифы</a></li>
+                    <li><a href="#order" class="menu-item">Заказ</a></li>
+                </ul>
+            </nav>
+            <!-- Действия -->
+            <div class="menu-actions">
+                <button id="theme-toggle" class="btn-theme">🌙</button>
+                <div class="language-select">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="kz">KZ</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
     <!-- Шапка с меню -->
     <header class="header">
         <div class="container">
