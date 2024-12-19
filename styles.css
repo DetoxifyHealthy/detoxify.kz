@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     color: #000000;
+    line-height: 1.6;
 }
 
 /* Шапка */
@@ -110,6 +111,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Языковые кнопки */
 .language-select {
     display: flex;
     gap: 5px;
@@ -132,6 +134,8 @@ body {
     background: #0077ff;
     color: #ffffff;
 }
+
+/* Промо-блок */
 .promotion {
     padding: 80px 20px;
     background: linear-gradient(135deg, #ffcccc, #ff6666);
@@ -155,6 +159,7 @@ body {
     margin: 0 auto;
 }
 
+/* Таймер обратного отсчета */
 .countdown {
     display: flex;
     justify-content: center;
@@ -179,6 +184,96 @@ body {
 .countdown-label {
     font-size: 1rem;
     color: #cc0000;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-theme {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .promotion h2 {
+        font-size: 2rem;
+    }
+
+    .promotion-text {
+        font-size: 1rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .countdown-item {
+        padding: 10px;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+
+    .countdown-label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px 15px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-theme {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+
+    .promotion {
+        padding: 40px 10px;
+    }
+
+    .promotion h2 {
+        font-size: 1.8rem;
+    }
+
+    .promotion-text {
+        font-size: 0.9rem;
+    }
+
+    .countdown {
+        gap: 10px;
+    }
+
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+
+    .countdown-label {
+        font-size: 0.8rem;
+    }
 }
 
 /* Hero-блок */
